@@ -299,9 +299,91 @@ label {
   margin-bottom: -6px;
 }
 
-.hp {
+.promo {
   width: 100%;
   margin: 0;
-  height: 1000px;
   background-color: #F8F200;
+}
+
+.promo-container {
+  display: flex;
+  padding: 70px 0;
+}
+
+.promo-left {
+  margin-right: 32px;
+}
+
+.image-top-block {
+  margin-bottom: 26px;
+}
+
+.image-bottom-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-title {
+  width: 560px;
+  color: #000;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.promo-text {
+  width: 624px;
+  height: 125px;
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 31px;
+}
+
+.promo-description {
+  margin-bottom: 40px;
+}
+
+.promo-desc {
+  display: flex;
+  align-items: center;
+}
+
+.promo-desc:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.promo-desc-img {
+  margin-right: 10px;
+}
+
+.promo-desc-text {
+  display: inline-block;
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.promo-btn {
+  display: inline-block;
+  padding: 15px 50px;
+  cursor: pointer;
+  background: #000;
+  color: #F8F200;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
 }

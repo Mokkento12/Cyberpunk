@@ -73,10 +73,10 @@
         <!-- /.container -->
     </div>
     <!-- /.description -->
+    <img src="img/transition-top.png" alt="transition top"
+        class="transition-top">
     <div class="form-container">
         <div class="container">
-            <!-- <img src="img/transition-top.png" alt="transition top"
-                class="transition-top"> -->
             <div class="form-desc">
                 <img src="img/offer.svg" alt="Акция" class="offer-img">
                 <h2 class="form-title">Играй и выигрывай!</h2>
@@ -94,16 +94,20 @@
                 &#59;&#41;</p>
             <div class="form-block">
                 <form action="#" class="form">
-                    <input type="text" id="name" name="name"
-                        placeholder="Как тебя зовут?" required>
-                    <input type="email" id="email" name="email"
-                        placeholder="Твой е-mail" required>
-                    <label for="screenshot">Прикрепить скриншот:</label>
-                    <input type="file" id="screenshot" name="screenshot">
+                    <input class="form-block-input" type="text" id="name"
+                        name="name" placeholder="Как тебя зовут?" required>
+                    <input class="form-block-input" type="email" id="email"
+                        name="email" placeholder="Твой е-mail" required>
+                    <div class="custom-file-input">
+                        <span class="file-button">Прикрепить скриншот</span>
+                        <span class="file-format">.png/.jpg/.pdf</span>
+                        <input type="file" id="screenshot" name="screenshot"
+                            class="file-input" accept=".png, .jpg, .pdf">
+                    </div>
                     <button class="button-form" type="submit">Отправить</button>
-                    <label>
-                        <input class="form-checkbox" type="checkbox"
-                            name="agree" required>
+                    <label class="form-checkbox">
+                        <input class="checkbox" type="checkbox" name="agree"
+                            required>
                         Согласен на обработку персональных данных
                     </label>
                 </form>
@@ -111,12 +115,17 @@
                     <img src="img/console-image.png" alt="Консоли">
                 </div>
             </div>
-            <!-- <img src="img/transition-bottom.png" alt="transition bottom"
-                class="transition-bottom"> -->
         </div>
         <!-- /.container -->
     </div>
     <!-- /.form-container -->
+    <img src="img/transition-bottom.png" alt="transition bottom"
+        class="transition-bottom">
+    <div class="hp">
+        <div class="container"></div>
+        <!-- /.container -->
+    </div>
+    <!-- hp -->
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -121,8 +121,6 @@ span {
   clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
 }
 
-
-
 .form-container {
   width: 100%;
   background: #000;
@@ -187,35 +185,134 @@ label {
   margin-bottom: 13px;
 }
 
-input {
+.form-block-input {
   width: 460px;
   padding-bottom: 13px;
   margin-bottom: 35px;
   border: none;
   background-color: inherit;
   border-bottom: 1px solid #777;
+  font-family: 'Roboto';
 }
 
-#screenshot {
+
+.custom-file-input {
+  position: relative;
+  display: inline-block;
   width: 460px;
   height: 120px;
   background: none;
   border: 1px dashed #777;
   padding: 39px 137px;
+  margin-bottom: 35px;
 }
 
-.button-form {
-  width: 192px;
-  border: none;
-  background: #F8F200;
-  padding: 15px 50px;
+.file-button {
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
-.form-checkbox {
+.file-input {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-format {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
   color: #FFF;
   font-family: 'Roboto';
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.button-form {
+  width: 192px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  background: #F8F200;
+  padding: 15px 50px;
+  margin-bottom: 15px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 10px;
+
+}
+
+.form-checkbox input {
+  margin-right: 10px;
+  /* background-color: transparent;
+  border: 1px solid #777777; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* .form-checkbox input:checked {
+  background-color: #F8F200;
+} */
+
+/* .checkbox {
+  display: none;
+}
+
+.form-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.form-checkbox:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #777;
+}
+
+.checkbox:checked+.form-checkbox:before {
+  content: '\2713';
+  color: #F8F200;
+  line-height: 14px;
+} */
+.transition-top,
+.transition-bottom {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -20px;
+}
+
+.hp {
+  width: 100%;
+  margin: 0;
+  height: 1000px;
+  background-color: #F8F200;
 }

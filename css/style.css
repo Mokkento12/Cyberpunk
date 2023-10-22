@@ -33,7 +33,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-
+  overflow: hidden;
 }
 
 .container {
@@ -645,11 +645,13 @@ label {
   }
 
   .form-block {
+    position: relative;
     align-items: stretch;
+    margin-right: 460px;
   }
 
   .form-desc {
-    display: block;
+    display: inline-block;
     margin-bottom: 25px;
   }
 
@@ -665,12 +667,24 @@ label {
   .form-text {
     width: 460px;
     height: 159px;
-    margin-bottom: 90px;
+    margin-bottom: 98px;
+  }
+
+  .form {
+    width: 460px;
+    height: 384px;
+    margin-right: 0;
   }
 
   .image-container {
+    width: 460px;
+    height: 858px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 450px;
+    right: 36px;
+    bottom: 70px;
   }
 
   .image-1 {
@@ -683,5 +697,40 @@ label {
     background-image: url('../img/bg-ps-5.png');
     width: 460px;
     height: 456px;
+  }
+
+  .promo-container {
+    max-width: 90%;
+  }
+
+  .image-top-block img {
+    width: 460px;
+    height: 317px;
+    margin-bottom: 25px;
+  }
+
+  .image-bottom-block {
+    flex-direction: column;
+  }
+
+  .image-bottom-block img {
+    margin-bottom: 25px;
+  }
+
+  .promo-title {
+    width: 460px;
+  }
+
+  .promo-text {
+    width: 460px;
+    height: 192px;
+  }
+
+  .links-container a {
+    margin-right: 0;
+  }
+
+  .logo-footer-image {
+    margin-right: 0;
   }
 }
